@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Sekolah - SMPN 1 Panti</title>
+    <meta name="description" content="Situs profil resmi SMPN 1 Panti, Kabupaten Jember.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body data-page="beranda">
+    <div class="splash" id="splashScreen" role="dialog" aria-modal="true" aria-labelledby="splashTitle">
+        <img class="splash-bg" src="images/fasilitas/Foto depan sekolah SPANJI.jpeg" alt="" aria-hidden="true">
+        <div class="splash-overlay" aria-hidden="true"></div>
+
+        <div class="splash-inner">
+            <h1 class="splash-title" id="splashTitle">SPANJI</h1>
+            <p class="splash-sub">SMP Negeri 1 Panti, Kabupaten Jember</p>
+            <button type="button" class="splash-enter" id="splashEnter">Masuk</button>
+        </div>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+    
+        <div class="container nav">
+            <a href="#beranda" class="brand" aria-label="SMPN 1 Panti, ke beranda">
+                <span class="brand-mark" aria-hidden="true">
+                    <span class="logo-wrap">
+                        <img src="images/logo/logo-smpn1panti.png" alt="Logo SMPN 1 Panti" class="logo-img"
+                            onload="this.nextElementSibling.style.display='none'"
+                            onerror="this.remove()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 6.5C10.4 5.2 8.2 4.5 5 4.5v13c3.2 0 5.4.7 7 2 1.6-1.3 3.8-2 7-2v-13c-3.2 0-5.4.7-7 2z"/>
+                            <path d="M12 6.5v13"/>
+                        </svg>
+                    </span>
+                </span>
+                <span class="brand-text">
+                    <strong>SMPN 1 Panti</strong>
+                    <small>Kec. Panti, Kab. Jember</small>
+                </span>
+            </a>
+
+            <nav class="nav-links" id="siteNav" aria-label="Navigasi utama">
+                <a href="#beranda" class="active">Beranda</a>
+                <a href="#profil">Profil</a>
+                <a href="#potensi">Potensi</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="#kontak" class="btn btn-ghost">Hubungi Kami</a>
+                <button class="nav-toggle" id="navtoggle" aria-label="Buka menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-shell">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <span class="sidebar-mark">S</span>
+                <div>
+                    <strong>SMPN 1 Panti</strong>
+                    <small>School Profile</small>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav" aria-label="Sidebar navigasi">
+                <a href="#beranda" class="active">Beranda</a>
+                <a href="#profil">Profil</a>
+                <a href="#statistik">Data</a>
+                <a href="#potensi">Potensi</a>
+                <a href="#fasilitas">Fasilitas</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+
+            <div class="sidebar-card">
+                <span>Jadwal</span>
+                <strong>07.00 - 14.00</strong>
+                <small>Senin - Sabtu</small>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <section id="beranda" class="hero" data-page="beranda">
+                <div class="container">
+                    <div class="hero-grid">
+                        <div class="hero-copy">
+                            <p class="hero-kicker">Selamat Datang di SMPN 1 Panti</p>
+                            <h1><span class="hero-school-name">SPANJI LESTARI</span><br>Mendidik generasi unggul, <span class="mark">berkarakter</span>, dan siap bersaing.</h1>
+                            <p class="hero-desc">Sekolah negeri berpredikat Adiwiyata yang berkomitmen membangun pendidikan berkualitas, menumbuhkan semangat belajar, serta menyiapkan siswa menjadi pribadi yang cerdas, disiplin, dan berdaya saing tinggi.</p>
+                            <div class="hero-meta" aria-label="Informasi sekolah">
+                                <span>Akademik</span>
+                                <span>Karakter</span>
+                                <span>Prestasi</span>
+                            </div>
+                            <div class="hero-action">
+                                <a href="#profil" class="btn btn-lg btn-primary">Kenali sekolah kami</a>
+                                <a href="#potensi" class="btn btn-lg btn-ghost">Lihat potensi</a>
+                            </div>
+                        </div>
+
+                        <div class="hero-media" aria-hidden="true">
+                            <img src="images/fasilitas/Foto depan sekolah SPANJI.jpeg" alt="Foto depan SPANJI LESTARI" loading="eager">
+                            <div class="hero-card hero-card-main">
+                                <span>Prestasi</span>
+                                <strong>Berprestasi</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-coords">
+                        <span>08°10'S 113°34'E</span>
+                        <span>Kec. Panti, Kab. Jember</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="statistik" class="stats" data-page="beranda">
+                <div class="container stats-grid">
+                    <div class="stats-head">
+                        <p class="eyebrow">Sekolah Kami</p>
+                        <h2>SMPN 1 Panti Data</h2>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="653">0</div>
+                        <p class="stat-label">Siswa Aktif</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="36">0</div>
+                        <p class="stat-label">Guru &amp; Tenaga Pendidik</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="191">0</div>
+                        <p class="stat-label">Prestasi &amp; Penghargaan</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="profil" class="profil" data-page="profil">
+                <div class="container profil-inner">
+                    <div class="profil-media">
+                        <img src="images/fasilitas/halaman depan sekolah 1.jpeg" alt="halaman depan SMPN 1 Panti" class="profil-img">
+                    </div>
+
+                    <div class="profil-bedge">
+                        <span class="profil-bedge-number">46</span>
+                        <span class="profil-bedge-label">Tahun Mengabdi</span>
+                        <p class="profil-desc">
+                            SMP Negeri 1 Panti berdiri pada tahun 1981 sebagai filial SMP Negeri Rambipuji 1 dengan tiga kelas yang menempati gedung SD Negeri I Panti. Seiring perkembangannya, sekolah ini mulai menempati gedung sendiri pada tahun 1983/1984 yang diresmikan oleh Gubernur Jawa Timur, Wahono, pada 28 November 1984. Hingga kini, SMP Negeri 1 Panti terus berkembang sebagai lembaga pendidikan yang berkomitmen mencetak generasi unggul, berprestasi, berkarakter, dan siap menghadapi tantangan masa depan.
+                        </p>
+
+                        <div class="profil-list">
+                            <div class="profil-item">
+                                <span class="profil-icon" aria-hidden="true">✓</span>
+                                <div>
+                                    <h3>Lokasi</h3>
+                                    <p>Kec. Panti, Kab. Jember, Jawa Timur</p>
+                                </div>
+                            </div>
+                            <div class="profil-item">
+                                <span class="profil-icon" aria-hidden="true">✓</span>
+                                <div>
+                                    <h3>Visi &amp; Misi</h3>
+                                    <p>Terwujudnya insan yang beriman, berakhlak mulia, berkarakter, dan berprestasi. Lihat <a href="#visi-misi" class="profil-link">visi &amp; misi lengkap</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#kontak" class="btn btn-primary">Hubungi sekolah</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="struktur" class="struktur" data-page="profil">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <p class="eyebrow">Profil Sekolah</p>
+                        <h2>Struktur Organisasi</h2>
+                    </div>
+
+                    <div class="org-chart reveal delay-1" role="group" aria-label="Bagan organisasi sekolah">
+                        <div class="org-leadership">
+                            <article class="org-card org-committee">
+                                <h3>Komite Sekolah</h3>
+                            </article>
+                            <article class="org-card lead">
+                                <span class="org-label">Pimpinan</span>
+                                <h3>Kepala Sekolah</h3>
+                                <p>WIWIK INDIYAWATI, S.Pd.</p>
+                                <img
+                                    src="images/guru/Wiwik.jpeg"
+                                    alt="Kepala Sekolah SMPN 1 Panti"
+                                    class="org-lead-img"
+                                    loading="lazy"
+                                    decoding="async">
+                            </article>
+                        </div>
+
+                        <div class="org-connector" aria-hidden="true"></div>
+
+                        <div class="org-row">
+                            <article class="org-card">
+                                <h3>Tata Usaha</h3>
+                                <p>HENI HOROYANDONO.</p>
+                                <img
+                                    src="images/guru/Pak Henny.jpeg"
+                                    alt="Tata Usaha SMPN 1 Panti"
+                                    class="org-lead-img"
+                                    loading="lazy"
+                                    decoding="async">
+                            </article>
+                            <article class="org-card">
+                                <h3>Kurikulum</h3>
+                                <p>FA'IS FENNY NURDIANA, S.Pd.</p>
+                                <img
+                                    src="images/guru/Fenny.jpeg"
+                                    alt="Kurikulum SMPN 1 Panti"
+                                    class="org-lead-img"
+                                    loading="lazy"
+                                    decoding="async">
+                            </article>
+                            <article class="org-card">
+                                <h3>Sarana &amp; Prasarana</h3>
+                                <p>NUR YUSUF HABIBI, S.Pd.</p>
+                                <img
+                                    src="images/guru/Pak Yusuf.jpeg"
+                                    alt="Sarana dan Prasarana SMPN 1 Panti"
+                                    class="org-lead-img"
+                                    loading="lazy"
+                                    decoding="async">
+                            </article>
+                        </div>
+
+                        <div class="org-connector" aria-hidden="true"></div>
+
+                        <div class="org-row org-row-split">
+                            <div class="org-stack">
+                                <article class="org-card">
+                                    <h3>Kesiswaan</h3>
+                                    <p>M. SELVY ALAMUL H, S.Pd.</p>
+                                    <img
+                                        src="images/guru/Pak Selvy.jpeg"
+                                        alt="Kesiswaan SMPN 1 Panti"
+                                        class="org-lead-img"
+                                        loading="lazy"
+                                        decoding="async">
+                                </article>
+                                <article class="org-card org-independent">
+                                    <h3>Perpustakaan</h3>
+                                    <p>SITI ASFIHANA RAHMAWATI, SS.</p>
+                                    <img
+                                        src="images/guru/SITI ASFIHANA RAHMAWATI, SS..jpg"
+                                        alt="Koleksi buku di Perpustakaan SMPN 1 Panti"
+                                        class="org-lead-img"
+                                        loading="lazy"
+                                        decoding="async">
+                                </article>
+                            </div>
+                            <div class="org-stack org-mapel-stack">
+                                <a href="#guru-mapel" class="org-card org-mapel-card">
+                                    <h3>Guru Mapel</h3>
+                                    <p>Mendampingi perkembangan siswa di kelas.</p>
+                                    <span class="org-mapel-cta">Lihat daftar guru
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+                                    </span>
+                                </a>
+                                <div class="org-connector org-mapel-connector" aria-hidden="true"></div>
+                            </div>
+                            <article class="org-card">
+                                <h3>Bimbingan &amp; Konseling</h3>
+                                <p>SITI BADRIYAH, S.Pd.</p>
+                                <img
+                                    src="images/guru/Ibu Siti.jpeg"
+                                    alt="Bimbingan dan Konseling SMPN 1 Panti"
+                                    class="org-lead-img"
+                                    loading="lazy"
+                                    decoding="async">
+                            </article>
+                        </div>
+
+                        <div class="org-connector" aria-hidden="true"></div>
+
+                        <article class="org-card org-staff-card org-siswa org-students">
+                            <h3>Siswa</h3>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="guru-mapel" class="struktur guru-mapel" data-page="guru-mapel">
+                <div class="container">
+                    <a href="#struktur" class="kontak-back">&larr; Kembali ke struktur organisasi</a>
+
+                    <div class="section-head reveal">
+                        <p class="eyebrow">Struktur Organisasi</p>
+                        <h2>Guru Mata Pelajaran</h2>
+                    </div>
+
+                    <div class="org-chart" role="group" aria-label="Bagan guru mata pelajaran">
+                        <article class="org-card lead">
+                            <h3>Guru Mapel</h3>
+                            <p>Mendampingi perkembangan siswa di kelas.</p>
+                        </article>
+
+                        <div class="org-connector" aria-hidden="true"></div>
+
+                        <div class="org-staff">
+                            <div class="org-col">
+                                <article class="org-card org-staff-card">
+                                    <h3>Guru PAI &amp; BTQ</h3>
+                                    <p>Hj. SITI ZULAIKHA, S.Ag</p>
+                                    <p>M. SELVY ALAMUL HUDA, S.PdI</p>
+                                    <p>AHMAD FAIZAL, S.Pd</p>
+                                </article>
+                                <article class="org-card org-staff-card">
+                                    <h3>Guru Bahasa Indonesia</h3>
+                                    <p>ENDANG HESTININGSIH, S.Pd</p>
+                                    <p>INDAH SRIWULANDARI, S.S</p>
+                                    <p>NUR YUSUF HABIBI, S.Pd</p>
+                                </article>
+                                <article class="org-card org-staff-card">
+                                    <h3>Guru Bahasa Inggris</h3>
+                                    <p>Drs. SURIYANTO ADI SAPUTRA</p>
+                                    <p>SITI ASFIHANA RAHMAWATI, SS.</p>
+                                    <p>JENI INDRI ASTUTIK, S.S.</p>
+                                </article>
+                                <article class="org-card org-staff-card">
+                                    <h3>Guru Bahasa Daerah</h3>
+                                    <p>LILIS SUMARNI, S.Pd.</p>
+                                    <p>IMAS AMALIA NURISWATI, S.Pd</p>
+                                </article>
+                                <article class="org-card org-staff-card">
+                                    <h3>Guru IPS</h3>
+                                    <p>ASTIYANI, S.Pd</p>
+                                    <p>TITIK SETYOWATI, S.E.</p>
+                                </article>
+                            </div>
+
+                            <div class="org-col org-mapel-column">
+                                <article class="org-card org-staff-card">
+                                    <h3>Guru Matematika</h3>
+                                    <p>CUCUT MASTITAH, S.Pd</p>
+                                    <p>AHMAD FAIZUL KARIM, S.Pd</p>
+                                    <p>EVI RAHMAWATI, S.Pd.</p>
+                                    <p>FALIH HELMI WIBISONO P., S.Pd</p>
+                                    <p>IRBAH NURJANNAH, S.Pd</p>
+                                    <p>MUCHAMMAD CHAIZUL C. M., S.Pd</p>
+                                </article>
+                                <article class="org-card org-staff-card">
+                                    <h3>Guru IPA</h3>
+                                    <p>YULIATI, S.Pd</p>
+                                    <p>FA'IS FENNY NURDIANA, S.Pd</p>
+                                    <p>LILIS SUMARNI, S.Pd.</p>
+                                    <p>M. DARWIS ANDI MUKHTAROM, S.Pd</p>
+                                </article>
+                                <article class="org-card org-staff-card">
+                                    <h3>Guru Koding &amp; Kecerdasan Artifisial</h3>
+                                    <p>AHMAD FAIZUL KARIM, S.Pd</p>
+                                    <p>EVI RAHMAWATI, S.Pd.</p>
+                                    <p>FALIH HELMI WIBISONO P., S.Pd</p>
+                                    <p>MUCHAMMAD CHAIZUL C. M., S.Pd</p>
+                                </article>
+                            </div>
+
+                            <div class="org-col">
+                                <article class="org-card org-staff-card">
+                                    <h3>Guru PPKn</h3>
+                                    <p>MUHAMMAD SHOLEH, SH.</p>
+                                    <p>M. DARWIS ANDI MUKHTAROM, S.Pd</p>
+                                    <p>IMAS AMALIA NURISWATI, S.Pd</p>
+                                    <p>MUCHAMMAD CHAIZUL C. M., S.Pd</p>
+                                </article>
+                                <article class="org-card org-staff-card">
+                                    <h3>Guru Informatika</h3>
+                                    <p>JOKO KINARYOADI, S.Pd</p>
+                                    <p>M. DARWIS ANDI MUKHTAROM, S.Pd</p>
+                                    <p>SEPTIAN DWI CAHYO, S.Pd</p>
+                                    <p>AHMAD FAIZAL, S.Pd</p>
+                                </article>
+                                <article class="org-card org-staff-card">
+                                    <h3>Guru PJOK</h3>
+                                    <p>DANANG ARGO WAHYU I., S.Pd</p>
+                                    <p>JOKO KINARYOADI, S.Pd</p>
+                                    <p>SEPTIAN DWI CAHYO, S.Pd</p>
+                                </article>
+                                <article class="org-card org-staff-card">
+                                    <h3>Guru Prakarya</h3>
+                                    <p>SITI BADRIYAH, S.Pd</p>
+                                    <p>FA'IS FENNY NURDIANA, S.Pd</p>
+                                    <p>DANANG ARGO WAHYU I., S.Pd</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="visi-misi" class="vision-grid" data-page="profil">
+                <div class="container vision-wrap">
+                    <div class="section-head reveal">
+                        <p class="eyebrow">Visi &amp; Misi</p>
+                        <h2>Komitmen Pendidikan Yang Terarah</h2>
+                    </div>
+
+                    <article class="vision-card vision-main reveal delay-1">
+                        <span class="vision-label">Visi</span>
+                        <h3>
+                            <span>Terwujudnya insan yang beriman,</span>
+                            <span>berakhlak mulia, berkarakter,</span>
+                            <span>berprestasi, dan berbudaya lingkungan.</span>
+                        </h3>
+                        <ul class="visi-pillars" aria-label="Pilar visi">
+                            <li><strong>Beriman</strong><span>Membiasakan ibadah, kejujuran, dan kesantunan.</span></li>
+                            <li><strong>Berkarakter</strong><span>Menerapkan disiplin, kemandirian, dan tanggung jawab.</span></li>
+                            <li><strong>Berprestasi</strong><span>Mengembangkan potensi setiap murid.</span></li>
+                            <li><strong>Peduli lingkungan</strong><span>Menjaga alam, kebersihan, dan lingkungan sekitar.</span></li>
+                        </ul>
+                    </article>
+
+                    <div class="misi-block reveal delay-1">
+                        <span class="vision-label">Misi</span>
+                        <ol class="misi-list">
+                            <li class="misi-item">
+                                <span class="misi-no" aria-hidden="true">01</span>
+                                <div>
+                                    <h4>Iman &amp; Akhlak</h4>
+                                    <p>Membiasakan nilai agama dan etika.</p>
+                                </div>
+                            </li>
+                            <li class="misi-item">
+                                <span class="misi-no" aria-hidden="true">02</span>
+                                <div>
+                                    <h4>Karakter &amp; Positif</h4>
+                                    <p>Membangun disiplin, kemandirian, gotong royong, kreativitas, dan sikap kritis.</p>
+                                </div>
+                            </li>
+                            <li class="misi-item">
+                                <span class="misi-no" aria-hidden="true">03</span>
+                                <div>
+                                    <h4>Pembelajaran Bermakna</h4>
+                                    <p>pembelajaran kontekstual, berbasis, teknologi, dan berpusat pada murid.</p>
+                                </div>
+                            </li>
+                            <li class="misi-item">
+                                <span class="misi-no" aria-hidden="true">04</span>
+                                <div>
+                                    <h4>Pengembangan Potensi</h4>
+                                    <p>Mengoptimalkan prestasi akademik dan nonakademik. (<em>growth mindset</em>).</p>
+                                </div>
+                            </li>
+                            <li class="misi-item">
+                                <span class="misi-no" aria-hidden="true">05</span>
+                                <div>
+                                    <h4>Budaya Lingkungan</h4>
+                                    <p>Membangun lingkungan yang bersih, sehat, aman, hijau, dan berkelanjutan.</p>
+                                </div>
+                            </li>
+                            <li class="misi-item">
+                                <span class="misi-no" aria-hidden="true">06</span>
+                                <div>
+                                    <h4>Tata Kelola Bermutu</h4>
+                                    <p>Bekerja secara profesional, kolaboratif, transparan, dan bermitra.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="achievement-strip" data-page="profil">
+                <div class="container achievement-wrap">
+                    <div class="section-head reveal">
+                        <p class="eyebrow">Prestasi</p>
+                        <h2>Kompetisi dan pencapaian siswa</h2>
+                    </div>
+                </div>
+                <div class="achievement-grid reveal delay-1">
+                    <div class="achievement-item">
+                        <strong>82</strong>
+                        <span>Lomba Akademik</span>
+                    </div>
+                    <div class="achievement-item">
+                        <strong>42</strong>
+                        <span>Prestasi Olahraga</span>
+                    </div>
+                    <div class="achievement-item">
+                        <strong>19</strong>
+                        <span>Kejuaraan Seni</span>
+                    </div>
+                    <div class="achievement-item">
+                        <strong>48</strong>
+                        <span>Prestasi Non Akademik</span>
+                    </div>
+                    <div class="achievement-item">
+                        <strong>34</strong>
+                        <span>Juara Tingkat Kabupaten</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="potensi" class="potensi" data-page="potensi">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <p class="eyebrow">Keunggulan Sekolah</p>
+                        <h2>Program &amp; fasilitas unggulan</h2>
+                    </div>
+
+                    <div class="bento reveal delay-1">
+                        <article class="bento-card bento-1 has-img">
+                            <div class="slider bento-slider" data-autoplay="4000" role="region" aria-roledescription="carousel" aria-label="Galeri akademik">
+                                <div class="slider-track">
+                                    <img src="images/fasilitas/kondisi kelas 1.jpeg" alt="Kegiatan akademik siswa" class="slide" loading="lazy">
+                                    <img src="images/fasilitas/kondisi kelas 2.jpeg" alt="Pembelajaran di dalam kelas" class="slide">
+                                    <img src="images/fasilitas/suasana belajar.jpeg" alt="Suasana belajar di kelas" class="slide">
+                                </div>
+                            </div>
+                            <svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                                <path d="M12 7v14"/>
+                                <path d="M3 5.5A2.5 2.5 0 0 1 5.5 3H12v18H5.5A2.5 2.5 0 0 0 3 23z"/>
+                                <path d="M21 5.5A2.5 2.5 0 0 0 18.5 3H12v18h6.5a2.5 2.5 0 0 1 2.5 2z"/>
+                                <path d="M6 7h3M6 10h3M15 7h3M15 10h3"/>
+                            </svg>
+                            <h4>Akademik</h4>
+                            <div class="academic-details">
+                                <div class="academic-copy">
+                                    <p>Program pembelajaran yang menekankan pengembangan kompetensi akademik, karakter, dan keterampilan akademik siswa.</p>
+                                </div>
+                                <div class="academic-programs" aria-label="Program akademik unggulan">
+                                    <span>Sekolah Model Pembelajaran Mendalam (PM)</span>
+                                    <span>Koding &amp; Kecerdasan Artifisial (KKA)</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="bento-card bento-2 has-img">
+                            <div class="slider bento-slider" data-autoplay="4000" data-indicator="dots" role="region" aria-roledescription="carousel" aria-label="Galeri ekstrakurikuler">
+                                <div class="slider-track">
+                                    <img src="images/ekstra/Basket 1.jpeg" alt="Kegiatan basket" class="slide" loading="lazy">
+                                    <img src="images/ekstra/Basket 2.jpeg" alt="Latihan basket siswa" class="slide" loading="lazy">
+                                    <img src="images/ekstra/Patrol.jpeg" alt="latihan patrol" class="slide">
+                                    <img src="images/ekstra/Patrol 2.jpeg" alt="Latihan olahraga dan seni" class="slide">
+                                    <img src="images/ekstra/Pramuka 1.jpeg" alt="Kegiatan pramuka" class="slide">
+                                    <img src="images/ekstra/pramuka 2.jpeg" alt="Kegiatan pramuka" class="slide">
+                                    <img src="images/ekstra/pramuka 3.jpeg" alt="Kegiatan pramuka" class="slide">
+                                    <img src="images/ekstra/Paskib 1.jpeg" alt="Kegiatan paskibra" class="slide">
+                                    <img src="images/ekstra/sepak bola 1.jpeg" alt="Kegiatan sepak bola" class="slide">
+                                    <img src="images/ekstra/sepak bola 2.jpeg" alt="Kegiatan sepak bola" class="slide">
+                                    <img src="images/ekstra/PLH 1.png" alt="Kegiatan PLH" class="slide">
+                                    <img src="images/ekstra/PLH (2).png" alt="Kegiatan PLH" class="slide">
+                                    <img src="images/ekstra/voli 1.jpeg" alt="Kegiatan voli" class="slide">
+                                    <img src="images/ekstra/voli 2.jpeg" alt="Kegiatan voli" class="slide">
+                                    <img src="images/ekstra/Tari 1.jpeg" alt="Kegiatan tari" class="slide">
+                                    <img src="images/ekstra/Tari 2.jpeg" alt="Kegiatan tari" class="slide">
+                                    <img src="images/prestasi/prestasi/Hadrah 1.jpeg" alt="Kegiatan hadrah" class="slide">
+                                    <img src="images/ekstra/Hadrah 2.jpeg" alt="Kegiatan hadrah" class="slide">
+                                    <img src="images/ekstra/Tilawah.jpeg" alt="Kegiatan tilawah" class="slide">
+                                    <img src="images/ekstra/Tilawah 2.jpeg" alt="Kegiatan tilawah" class="slide">
+                                    <img src="images/ekstra/Broadcast 1.jpeg" alt="Kegiatan broadcast" class="slide">
+                                    <img src="images/ekstra/Broadcast 2.jpeg" alt="Kegiatan broadcast" class="slide">
+                                </div>
+                            </div>
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <path d="M4 18V6l8-4 8 4v12l-8 4-8-4z"/>
+                                <path d="M12 2v20M4 6l8 4 8-4"/>
+                            </svg>
+                            <h4>Ekstrakurikuler</h4>
+                            <p>Pramuka, olahraga, seni, dan kegiatan pengembangan bakat siswa.</p>
+                        </article>
+
+                             <article class="bento-card bento-3 has-img">
+                            <div class="slider bento-slider" data-autoplay="4000" role="region" aria-roledescription="carousel" aria-label="Galeri fasilitas">
+                                <div class="slider-track">
+                                    <img src="images/fasilitas/lapangan 1.jpeg" alt="Lapangan olahraga yang luas di SMPN 1 Panti" class="slide" loading="lazy">
+                                    <img src="images/fasilitas/lapangan 2.jpg" alt="Siswa bermain di lapangan sekolah" class="slide" loading="lazy">
+                                    <img src="images/fasilitas/Perpus 1.jpg" alt="Poster ajakan membaca di perpustakaan" class="slide" loading="lazy">
+                                    <img src="images/fasilitas/perpus 2.jpg" alt="Koleksi ensiklopedia di perpustakaan" class="slide" loading="lazy">
+                                    <img src="images/fasilitas/perpus 3.jpg" alt="Buku pelajaran di rak perpustakaan" class="slide" loading="lazy">
+                                    <img src="images/fasilitas/Kopsis.jpeg" alt="Kantin bersih dan nyaman di SMPN 1 Panti" class="slide" loading="lazy">
+                                    <img src="images/fasilitas/Ruang BK.jpeg" alt="Ruang bimbingan konseling" class="slide" loading="lazy">
+                                    <img src="images/fasilitas/Kantin.jpg" alt="Kantin sekolah dengan fasilitas lengkap" class="slide" loading="lazy">
+                                    <img src="images/fasilitas/musholla.10.jpeg" alt="Musholla SMPN 1 Panti" class="slide" loading="lazy">
+                                </div>
+                            </div>
+                             <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <path d="M4 20V8.5A1.5 1.5 0 0 1 5.5 7H9V4h6v3h3.5A1.5 1.5 0 0 1 20 8.5V20"/>
+                                <path d="M9 20v-6h6v6"/>
+                            </svg>
+                            <h4>Fasilitas</h4>
+                            <p>Ruangan kelas nyaman, perpustakaan, kantin bersih, koprasi, Ruang Bimbingan Konseling, dan lapangan olahraga yang luas.</p>
+                        </article>
+                        
+                        <article class="bento-card bento-4 has-img">
+                            <div class="slider bento-slider" data-autoplay="4000" role="region" aria-roledescription="carousel" aria-label="Galeri prestasi">
+                                <div class="slider-track">
+                                    <img src="images/prestasi/prestasi/prestasi 1.jpeg" alt="prestasi siswa" class="slide" loading="lazy">
+                                    <img src="images/prestasi/prestasi/prestasi 2.jpeg" alt="Penyerahan piala dan piagam" class="slide">
+                                    <img src="images/prestasi/prestasi/juara 3 mtq.jpg" alt="Siswa menerima penghargaan MTQ" class="slide">
+                                    <img src="images/prestasi/prestasi/juara kaligrafi 1.jpg" alt="Siswa menerima penghargaan kaligrafi" class="slide">
+                                    <img src="images/prestasi/prestasi/juara 2 kaligrafi.jpg" alt="siswa menerima penghargaan film pendek" class="slide">
+                                    <img src="images/prestasi/prestasi/juara 1 film pendek.jpg" alt="Siswa menerima penghargaan kaligrafi" class="slide">
+                                    <img src="images/prestasi/prestasi/juara karate.jpg" alt="Siswa menerima penghargaan karate" class="slide">
+                                </div>
+                            </div>
+                            <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <path d="M12 2.5 14.7 8l6.1.9-4.4 4.3 1 6.1-6.4-3.4-6.4 3.4 1-6.1L3.2 9l6.1-.9L12 2.5z"/>
+                            </svg>
+                            <h4>Prestasi</h4>
+                            <p>Berbagai penghargaan tingkat kabupaten hingga provinsi di bidang akademik dan non-akademik.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="fasilitas" class="fasilitas" data-page="potensi">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <p class="eyebrow">Fasilitas Sekolah</p>
+                        <h2>Lingkungan belajar yang nyaman &amp; lengkap</h2>
+                        <p>Tiga fasilitas utama yang menunjang kegiatan belajar mengajar di SMPN 1 Panti.</p>
+                    </div>
+
+                    <div class="fasilitas-grid reveal delay-1">
+                        <div class="fasilitas-card">
+                            <div class="fasilitas-thumb slider" data-autoplay="4000" role="region" aria-roledescription="carousel" aria-label="Galeri ruang kelas">
+                                <div class="slider-track">
+                                    <img src="images/fasilitas/Ruang kelas 3.jpeg" alt="Ruang kelas SMPN 1 Panti" class="slide" loading="lazy">
+                                    <img src="images/fasilitas/kondisi kelas 2.jpeg" alt="Suasana belajar di kelas" class="slide">
+                                    <img src="images/fasilitas/suasana belajar.jpeg" alt="Papan tulis dan bangku siswa" class="slide">
+                                </div>
+                            </div>
+                            <div class="fasilitas-body">
+                                <p class="tag">Ruang Belajar</p>
+                                <h4>Ruang Kelas</h4>
+                                <p>Ruangan kelas bersih, nyaman, dan mendukung proses pembelajaran aktif.</p>
+                            </div>
+                        </div>
+
+                        <div class="fasilitas-card">
+                            <div class="fasilitas-thumb slider" data-autoplay="4000" role="region" aria-roledescription="carousel" aria-label="Galeri perpustakaan">
+                                <div class="slider-track">
+                                    <img src="images/fasilitas/perpus 3.jpg" alt="Perpustakaan SMPN 1 Panti" class="slide" loading="lazy">
+                                    <img src="images/fasilitas/perpus 2.jpg" alt="Rak buku perpustakaan" class="slide">
+                                </div>
+                            </div>
+                            <div class="fasilitas-body">
+                                <p class="tag">Literasi</p>
+                                <h4>Perpustakaan Sekolah</h4>
+                                <p>Koleksi buku pelajaran, referensi, dan bacaan umum untuk mendukung minat baca siswa.</p>
+                            </div>
+                        </div>
+
+                        <div class="fasilitas-card">
+                            <div class="fasilitas-thumb slider" data-autoplay="4000" role="region" aria-roledescription="carousel" aria-label="Galeri lapangan">
+                                <div class="slider-track">
+                                    <img src="images/fasilitas/lapangan 1.jpeg" alt="Lapangan olahraga SMPN 1 Panti" class="slide" loading="lazy">
+                                    <img src="images/ekstra/Basket 2.jpeg" alt="Kegiatan olahraga siswa" class="slide">
+                                    <img src="images/fasilitas/upacara 1.jpeg" alt="Upacara dan kegiatan di lapangan" class="slide">
+                                    <img src="images/fasilitas/Upacara 2.jpeg" alt="Upacara bendera di lapangan sekolah" class="slide">
+                                </div>
+                            </div>
+                            <div class="fasilitas-body">
+                                <p class="tag">Olahraga &amp; Ekstrakurikuler</p>
+                                <h4>Lapangan dan Kegiatan Siswa</h4>
+                                <p>Area olahraga, kegiatan upacara, kegiatan ekstrakurikuler, dan pelatihan bakat siswa di lingkungan sekolah.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="kontak" class="kontak" data-page="kontak">
+                <div class="container kontak-grid">
+                    <div class="kontak-copy reveal">
+                        <a href="#beranda" class="kontak-back">&larr; Kembali ke beranda</a>
+                        <p class="eyebrow">Kontak</p>
+                        <h2>Kunjungi atau hubungi</h2>
+                        <div class="kontak-info">
+                            <div class="row">
+                                <svg class="kontak-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>
+                                </svg>
+                                <b>Alamat</b>
+                                <a class="kontak-value" href="https://www.google.com/maps/search/?api=1&amp;query=SMPN+1+Panti%2C+Kecamatan+Panti%2C+Kabupaten+Jember%2C+Jawa+Timur" target="_blank" rel="noopener noreferrer">SMPN 1 Panti, Kec. Panti, Kab. Jember, Jawa Timur</a>
+                            </div>
+                            <div class="row">
+                                <svg class="kontak-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 11.19 18a19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.09 3.18 2 2 0 0 1 4.08 1h3a2 2 0 0 1 2 1.72c.12.9.34 1.78.65 2.62a2 2 0 0 1-.45 2.11L8 8.73a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.84.31 1.72.53 2.62.65A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <b>Telepon</b>
+                                <span class="kontak-value">(085) 211-339-993</span>
+                            </div>
+                            <div class="row">
+                                <svg class="kontak-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>
+                                </svg>
+                                <b>Email</b>
+                                <a class="kontak-value" href="mailto:smpn1panti@gmail.com">smpn1panti@gmail.com</a>
+                            </div>
+                            <div class="row">
+                                <svg class="kontak-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+                                </svg>
+                                <b>Jam Layanan</b>
+                                <span class="kontak-value">Senin-Sabtu, 07.00-14.00 WIB</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary" data-wa target="_blank" rel="noopener noreferrer" style="margin-top: 28px;">Kirim</a>
+                    </div>
+
+                    <div class="map-wrap reveal">
+                        <iframe
+                            src="https://www.google.com/maps?q=SMPN+1+Panti%2C+Kecamatan+Panti%2C+Kabupaten+Jember%2C+Jawa+Timur&amp;output=embed"
+                            title="Peta lokasi SMPN 1 Panti di Google Maps"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-brand-item">
+                    <img src="images/logo/logo Tut wuri.png" alt="Logo Tut Wuri">
+                    <span class="footer-brand-copy">
+                        <strong>SPANJI MELESAT</strong>
+                    </span>
+                </div>
+                <div class="footer-brand-item">
+                    <img src="images/logo/spanji_mekar.jpeg" alt="Logo Adiwiyata">
+                    <span class="footer-brand-copy">
+                        <strong>Adiwiyata</strong>
+                    </span>
+                </div>
+                <div class="footer-brand-item">
+                    <img src="images/logo/spanji_lestari.jpeg" alt="Logo SPANJI LESTARI">
+                    <span class="footer-brand-copy">
+                        <strong>SPANJI LESTARI</strong>
+                    </span>
+                </div>
+            </div>
+
+            <div class="footer-link">
+                <a href="#beranda">Beranda</a>
+                <a href="#profil">Profil</a>
+                <a href="#potensi">Potensi</a>
+                <a href="#fasilitas">Fasilitas</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+
+            <nav class="footer-social" aria-label="Media sosial">
+                <span class="footer-social-title">Media Sosial</span>
+                <div class="footer-social-links">
+                    <a class="footer-social-account" href="https://www.instagram.com/spanji1jember/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @spanji1jember">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="17.5" cy="6.5" r=".7" fill="currentColor" stroke="none"/>
+                        </svg>
+                        <span>@spanji1jember</span>
+                    </a>
+                    <a class="footer-social-account" href="https://youtube.com/@smpnegeri1panti" target="_blank" rel="noopener noreferrer" aria-label="YouTube @smpnegeri1panti">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/>
+                        </svg>
+                        <span>@smpnegeri1panti</span>
+                    </a>
+                    <a class="footer-social-account" href="https://www.tiktok.com/@smp.negeri.1.panti" target="_blank" rel="noopener noreferrer" aria-label="TikTok @smp.negeri.1.panti">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M19.6 6.3a5.5 5.5 0 0 1-3.4-4.8V1h-4.1v15.2a3.2 3.2 0 1 1-2.3-3.1V8.9a7.3 7.3 0 1 0 6.4 7.3V8.5a9.5 9.5 0 0 0 5.5 1.8V6.2c-.7 0-1.4 0-2.1.1Z"/>
+                        </svg>
+                        <span>@smp.negeri.1.panti</span>
+                    </a>
+                    <a class="footer-social-account" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook Spanji Jember">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.8-.1-1.7-.2-2.9-.2-2.9 0-4.9 1.8-4.9 5.1V12H7v3h3v8h3.5Z"/>
+                        </svg>
+                        <span>Spanji Jember</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <p class="footer-fine">© 2026 SMPN 1 Panti</p>
+    </footer>
+
+    <a href="https://wa.me/" class="wa-float" data-wa target="_blank" rel="noopener noreferrer" aria-label="Chat via WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <button class="to-top" id="toTop" aria-label="kembali ke atas">↑</button>
+</body>
+
+</html>
